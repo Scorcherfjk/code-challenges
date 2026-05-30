@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { sortedSquares } from '../sortedSquares';
+import { sortedSquares } from '../008-sortedSquares';
 
 describe('sortedSquares', () => {
   it('should return sorted squares of positive numbers', () => {

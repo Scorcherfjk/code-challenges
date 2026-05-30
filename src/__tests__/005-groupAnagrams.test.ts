@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { groupAnagrams } from '../groupAnagrams';
+import { groupAnagrams } from '../005-groupAnagrams';
 
 function normalizeGroups(groups: string[][]): string[][] {
   return groups

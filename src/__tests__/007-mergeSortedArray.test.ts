@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { merge } from '../mergeSortedArray';
+import { merge } from '../007-mergeSortedArray';
 
 describe('merge', () => {
   it('should merge two sorted arrays when both have elements', () => {

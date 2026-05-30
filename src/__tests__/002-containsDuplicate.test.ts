@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { containsDuplicate } from '../containsDuplicate';
+import { containsDuplicate } from '../002-containsDuplicate';
 
 describe('containsDuplicates', () => {
   it('should return false if no duplicates', () => {

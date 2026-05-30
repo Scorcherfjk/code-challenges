@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { maxArea } from '../maxArea';
+import { maxArea } from '../009-maxArea';
 
 describe('maxArea', () => {
   it('should return the maximum area for a standard input', () => {

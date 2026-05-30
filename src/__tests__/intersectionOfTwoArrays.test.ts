@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { intersection } from './intersectionOfTwoArrays';
+import { intersection } from '../intersectionOfTwoArrays';
 
 describe('intersection', () => {
   it('should return common elements when duplicates exist', () => {

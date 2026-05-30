@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { isAnagram } from "./validAnagram";
+import { isAnagram } from "../validAnagram";
 
 describe("isAnagram", () => {
   it("should return true if valid anagram", () => {

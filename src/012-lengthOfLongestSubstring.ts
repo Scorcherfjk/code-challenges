@@ -1,4 +1,9 @@
 // Slidding Window
+
+/*
+ * OBJETIVO: Encontrar la longitud del substring más largo sin caracteres repetidos
+ * ALGORITMO: Sliding window con Set para rastrear caracteres en la ventana actual
+ */
 export function lengthOfLongestSubstring(s: string): number {
   // Solucion 3
 

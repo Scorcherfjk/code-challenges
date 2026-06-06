@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Encontrar elementos comunes entre dos arrays
+ * ALGORITMO: Set del primer array para búsqueda O(1), iterar el segundo para encontrar coincidencias
+ */
 export function intersection(nums1: number[], nums2: number[]): number[] {
   // Esta solucion usa los metodos internos de los Set O(n)
   // return [...new Set(nums1).intersection(new Set(nums2))];

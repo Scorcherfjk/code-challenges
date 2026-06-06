@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Para cada día, encontrar cuántos días hasta una temperatura más cálida
+ * ALGORITMO: Stack monótono decreciente que almacena índices de días
+ */
 export function dailyTemperatures(temperatures: number[]): number[] {
   const stack = [];
   const results = new Array(temperatures.length).fill(0);

@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Encontrar dos números que sumen a un valor objetivo
+ * ALGORITMO: Hash map para almacenar números vistos y buscar su complemento en O(1)
+ */
 export function twoSum(nums: number[], target: number): number[] {
   // Solución 1 - Fuerza Bruta
   // for (const [firstIndex, firstValue] of nums.entries()) {

@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Verificar si los paréntesis están balanceados y correctamente emparejados
+ * ALGORITMO: Stack para emparejar paréntesis de apertura con cierre
+ */
 export function isValid(s: string): boolean {
     // Solucion 1 - Valida - Mi version sin feedback 
     // const open = new Set(['(', '[', '{']);

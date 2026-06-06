@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Implementar una pila que retorne el elemento mínimo en O(1)
+ * ALGORITMO: Stack auxiliar que mantiene solo los valores mínimos vistos
+ */
 export class MinStack {
 
     stack: number[];

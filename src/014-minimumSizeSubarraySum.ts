@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Encontrar el subarray de menor longitud cuya suma es >= target
+ * ALGORITMO: Sliding window expandiendo derecha y contrayendo izquierda cuando suma es suficiente
+ */
 export function minSubArrayLen(target: number, nums: number[]): number {
 
     // Solucion 1 - Mia Funcional

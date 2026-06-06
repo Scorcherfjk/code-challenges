@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Verificar si una permutación de s1 existe como substring de s2
+ * ALGORITMO: Sliding window con hash map comparando frecuencias de caracteres
+ */
 export function checkInclusion(s1: string, s2: string): boolean {
     // Solucion 3 
     

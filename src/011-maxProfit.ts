@@ -1,4 +1,9 @@
 // Running Minimum
+
+/*
+ * OBJETIVO: Encontrar máxima ganancia comprando y vendiendo una acción una vez
+ * ALGORITMO: Una pasada guardando el mínimo visto y calculando máxima diferencia
+ */
 export function maxProfit(prices: number[]): number {
 
     // Solucion 4 - Optima - solo necesito recordar lo relevante del pasado

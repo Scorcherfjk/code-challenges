@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Verificar si un string es palíndromo (ignorando espacios y caracteres no alfanuméricos)
+ * ALGORITMO: Two pointers desde los extremos comparando caracteres limpiados
+ */
 export function isPalindrome(s: string): boolean {
 
   // Comenzamos limpiando el string de todos los caracteres extranos

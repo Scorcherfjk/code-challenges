@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Encontrar posición de target o dónde debería insertarse
+ * ALGORITMO: Búsqueda binaria para encontrar posición exacta o de inserción
+ */
 export function searchInsert(nums: number[], target: number): number {
     let low = 0;
     let high = nums.length - 1;

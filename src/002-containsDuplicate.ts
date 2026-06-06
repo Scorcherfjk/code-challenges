@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Detectar si hay números duplicados en el array
+ * ALGORITMO: Set para guardar números vistos con búsqueda O(1)
+ */
 export function containsDuplicate(nums: number[]): boolean {
   // Solucion 1 - mi usual
   // return nums.length !== new Set(nums).size;

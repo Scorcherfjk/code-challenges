@@ -6,6 +6,10 @@
 // ->->->-> 5: h0,e0,l1,o-1
 // ->->->->-> 6: h0, e0, l0, o0
 
+/*
+ * OBJETIVO: Verificar si dos strings son anagramas (mismas letras, diferente orden)
+ * ALGORITMO: Hash map para contar frecuencias de caracteres en ambos strings
+ */
 export function isAnagram(s: string, t: string): boolean {
   // Si no tienen la misma longitud no son anagramas
   if (s.length !== t.length) return false;

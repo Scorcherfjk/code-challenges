@@ -1,6 +1,11 @@
 /**
  Do not return anything, modify nums1 in-place instead.
  */
+
+/*
+ * OBJETIVO: Fusionar dos arrays ordenados en uno, modificando el primero en lugar
+ * ALGORITMO: Two pointers desde el final para evitar sobrescribir datos mientras se fusionan
+ */
 export function merge(
   nums1: number[],
   m: number,

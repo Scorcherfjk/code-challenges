@@ -1,3 +1,7 @@
+/*
+ * OBJETIVO: Encontrar un target en un array ordenado
+ * ALGORITMO: Búsqueda binaria dividiendo el rango de búsqueda por la mitad
+ */
 export function search(nums: number[], target: number): number {
   // Solucion 1 - Intento de recursividad
   // const middle = Math.ceil(nums.length / 2);

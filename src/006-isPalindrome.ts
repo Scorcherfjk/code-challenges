@@ -1,6 +1,7 @@
 /*
- * OBJETIVO: Verificar si un string es palíndromo (ignorando espacios y caracteres no alfanuméricos)
+ * OUTPUT: Verificar si un string es palíndromo
  * ALGORITMO: Two pointers desde los extremos comparando caracteres limpiados
+ * SKILL: Two Pointers
  */
 export function isPalindrome(s: string): boolean {
 

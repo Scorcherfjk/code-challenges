@@ -1,8 +1,9 @@
 // Para este problema que son permutaciones, llegar a O(n * n log n) no esta mal.
 
 /*
- * OBJETIVO: Agrupar strings que son anagramas entre sí
+ * OUTPUT: Agrupar strings que son anagramas entre sí
  * ALGORITMO: Ordenar caracteres de cada string como clave en hash map para agrupar anagramas
+ * SKILL: Hash Map + Sort
  */
 export function groupAnagrams(strs: string[]): string[][] {
 

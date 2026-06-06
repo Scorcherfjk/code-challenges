@@ -3,8 +3,9 @@
  */
 
 /*
- * OBJETIVO: Fusionar dos arrays ordenados en uno, modificando el primero en lugar
+ * OUTPUT: Fusionar dos arrays ordenados en uno
  * ALGORITMO: Two pointers desde el final para evitar sobrescribir datos mientras se fusionan
+ * SKILL: Two Pointers
  */
 export function merge(
   nums1: number[],

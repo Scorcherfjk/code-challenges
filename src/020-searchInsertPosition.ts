@@ -1,6 +1,7 @@
 /*
- * OBJETIVO: Encontrar posición de target o dónde debería insertarse
+ * OUTPUT: Encontrar posición de target o dónde deber insertarse
  * ALGORITMO: Búsqueda binaria para encontrar posición exacta o de inserción
+ * SKILL: Binary Search
  */
 export function searchInsert(nums: number[], target: number): number {
     let low = 0;

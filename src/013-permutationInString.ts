@@ -1,6 +1,7 @@
 /*
- * OBJETIVO: Verificar si una permutación de s1 existe como substring de s2
+ * OUTPUT: Verificar si una permutación de s1 existe en s2
  * ALGORITMO: Sliding window con hash map comparando frecuencias de caracteres
+ * SKILL: Sliding Window
  */
 export function checkInclusion(s1: string, s2: string): boolean {
     // Solucion 3 
@@ -26,7 +27,7 @@ export function checkInclusion(s1: string, s2: string): boolean {
             if (frequency.get(rightChar) === 0) requiredMatches--;
         }
 
-        // 3. Cuando la ventana supera el tamaño de s1, encogemos por la izquierda
+        // Cuando la ventana supera el tamaño de s1, encogemos por la izquierda
         if (i >= s1.length) {
             const leftChar = s2[i - s1.length]; // El carácter que se queda fuera
 

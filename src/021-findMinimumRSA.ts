@@ -1,8 +1,9 @@
 // RSA = Rotated Sorted Array
 
 /*
- * OBJETIVO: Encontrar el elemento mínimo en un array rotado ordenado
+ * OUTPUT: Encontrar el elemento mínimo en un array rotado ordenado
  * ALGORITMO: Búsqueda binaria identificando cuál mitad está ordenada
+ * SKILL: Binary Search
  */
 export function findMinRSA(nums: number[]): number {
   // Solucion 1 - via facil y diaria

@@ -1,8 +1,9 @@
 // RSA = Rotated Sorted Array
 
 /*
- * OBJETIVO: Buscar un target en un array rotado ordenado
- * ALGORITMO: Búsqueda binaria identificando qué mitad está ordenada
+ * OUTPUT: Buscar un target en un array rotado ordenado
+ * ALGORITMO: Búsqueda binaria identificando qué mitad está ordenada para buscar correctamente
+ * SKILL: Binary Search
  */
 export function searchRSA(nums: number[], target: number): number {
 

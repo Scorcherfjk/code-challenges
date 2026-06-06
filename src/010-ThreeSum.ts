@@ -1,8 +1,9 @@
 // Para este problema que son permutaciones, llegar a O(n2) es lo minimo.
 
 /*
- * OBJETIVO: Encontrar todas las combinaciones de 3 números que sumen cero
+ * OUTPUT: Encontrar todas las combinaciones de 3 números que sumen cero
  * ALGORITMO: Ordenar array, luego usar two pointers para cada número fijo evitando duplicados
+ * SKILL: Two Pointers + Sort
  */
 export function threeSum(nums: number[]): number[][] {
 

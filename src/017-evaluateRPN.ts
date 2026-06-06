@@ -1,8 +1,9 @@
 // RPN = Reversed Polish Notation
 
 /*
- * OBJETIVO: Evaluar una expresión en notación polaca inversa
+ * OUTPUT: Evaluar una expresión en notación polaca inversa
  * ALGORITMO: Stack para números, procesar operadores con los dos últimos números del stack
+ * SKILL: Stack
  */
 export function evalRPN(tokens: string[]): number {
 

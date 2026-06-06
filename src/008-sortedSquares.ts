@@ -1,6 +1,7 @@
 /*
- * OBJETIVO: Retornar cuadrados de números en orden (array entrada ordenado)
+ * OUTPUT: Retornar cuadrados de números en orden
  * ALGORITMO: Two pointers desde extremos, ya que los mayores cuadrados están en los bordes
+ * SKILL: Two Pointers
  */
 export function sortedSquares(nums: number[]): number[] {
   // Solucion 1 - Desarrollo tipico O(n log n)

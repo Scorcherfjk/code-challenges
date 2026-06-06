@@ -1,6 +1,7 @@
 /*
- * OBJETIVO: Encontrar el área máxima entre dos líneas de altura variable
+ * OUTPUT: Encontrar el área máxima entre dos líneas
  * ALGORITMO: Two pointers desde los extremos, moviendo el lado de menor altura
+ * SKILL: Two Pointers
  */
 export function maxArea(height: number[]): number {
     

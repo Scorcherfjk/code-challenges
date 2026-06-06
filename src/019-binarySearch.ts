@@ -1,6 +1,7 @@
 /*
- * OBJETIVO: Encontrar un target en un array ordenado
+ * OUTPUT: Encontrar un target en un array ordenado
  * ALGORITMO: Búsqueda binaria dividiendo el rango de búsqueda por la mitad
+ * SKILL: Binary Search
  */
 export function search(nums: number[], target: number): number {
   // Solucion 1 - Intento de recursividad

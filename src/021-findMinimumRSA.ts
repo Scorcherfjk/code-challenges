@@ -9,44 +9,29 @@ export function findMinRSA(nums: number[]): number {
   // Solucion 1 - via facil y diaria
   // return Math.min(...nums);
 
-  // Solucion 2 - Puede ser buena pero si el minimo esta a la mitad es O(n)
-  // let left = 0;
-  // let right = nums.length - 1;
-
-  // if (left === right) {
-  //     return nums[left];
-  // }
-
-  // while (left <= right) {
-  //     const first = nums[left];
-  //     const last = nums[right];
-
-  //     if (first < last) {
-  //         const next = nums[left + 1];
-  //         if (next > first){
-  //             return first;
-  //         }
-  //         left++;
-  //     } else {
-  //         const prev = nums[right - 1];
-  //         if (prev > last){
-  //             return last;
-  //         }
-  //         right--;
-  //     }
-  // }
-
-  // Usando Binary Search
+  // Usando Binary Search y sus dos punteros
   let low = 0;
   let high = nums.length - 1;
+
+  // Aqui los punteros NO pueden pisarse
   while (low < high) {
+
+    // encontramos la mitad
     let mid = Math.floor((low + high) / 2);
     const guess = nums[mid];
     const last = nums[high];
 
+    // No tenemos valor objetivo, solo seguimos buscando
+
+    // Si el ultimo del array es menor al de la mitad
     if (last < guess) {
+
+      // movemos el limite menor a la mitad + 1 y seguimos buscando
+      // Descartamos el medio porque ya sabemos que hay uno menor a este, que es "last"
       low = mid + 1;
     } else {
+
+      // sino movemos el limite mayor a la mitad para ser inclusivo com ese valor
       high = mid;
     }
   }

@@ -36,7 +36,7 @@ export function searchRSA(nums: number[], target: number): number {
                 left = mid + 1;
             }
         } else {
-            // No lo es! la mitad izquierda esta desordenada 
+            // No lo es! la mitad izquierda esta desordenada (por descarte la derecha esta ordenada)
 
             // Nuestro numero esta en la mitad derecha ordenada
             if (last >= target && target > guess) {

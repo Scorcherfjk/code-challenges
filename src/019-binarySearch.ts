@@ -4,36 +4,36 @@
  * SKILL: Binary Search
  */
 export function search(nums: number[], target: number): number {
-  // Solucion 1 - Intento de recursividad
-  // const middle = Math.ceil(nums.length / 2);
-
-  // if (!nums.length || middle === 0) return -1;
-  // if (nums[middle] === target) {
-  //     return middle;
-  // }
-
-  // if (nums[middle] > target) {
-  //     return search(nums.slice(0, middle), target)
-  // } else {
-  //     return search(nums.splice(middle), target)
-  // }
-
-  // Solucion 2, con while, como si fuera una ventana
+  // Iniciamos con 2 punteros, uno al inicio y otro al final
   let left = 0;
   let right = nums.length - 1;
+
+  // Aqui los punteros pueden pisarse porque llegaran a un mismo objetivo
   while (left <= right) {
+
+    // encontramos el medio del array
     let middle = Math.floor((left + right) / 2);
     const guess = nums[middle];
+
+    // Si llegamos al target, retornamos la ubicacion
     if (guess === target) {
       return middle;
     }
 
+    // Si el objetivo es menor al objetivo
     if (guess < target) {
+      
+      // movemos el limite izquierdo a la mitad
+      // y descartamos la mitad derecha del array
       left = middle + 1;
     } else {
+
+      // sino movemos el limite derecho a la mitad
+      // y descartamos la mitad izquierda del array
       right = middle - 1;
     }
   }
 
+  // Retornamos -1 si no encontramo nada
   return -1;
 }

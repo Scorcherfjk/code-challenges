@@ -55,15 +55,15 @@ Lista de ejercicios (orden cronológico según el archivo original)
 - [x] Search Insert Position
 - [x] Find Minimum in Rotated Sorted Array
 - [x] Search in Rotated Sorted Array
-- [] Sqrt(x)
-- [] Reverse Linked List
-- [] Merge Two Sorted Lists
-- [] Linked List Cycle
-- [] Remove Nth Node From End
-- [] Maximum Depth of Binary Tree
-- [] Same Tree
-- [] Invert Binary Tree
-- [] Binary Tree Level Order Traversal
+- [ ] Sqrt(x)
+- [ ] Reverse Linked List
+- [ ] Merge Two Sorted Lists
+- [ ] Linked List Cycle
+- [ ] Remove Nth Node From End
+- [ ] Maximum Depth of Binary Tree
+- [ ] Same Tree
+- [ ] Invert Binary Tree
+- [ ] Binary Tree Level Order Traversal
 
 Cómo ejecutar los tests
 -----------------------

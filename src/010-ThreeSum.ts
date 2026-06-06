@@ -1,4 +1,6 @@
+// Para este problema que son permutaciones, llegar a O(n2) es lo minimo.
 export function threeSum(nums: number[]): number[][] {
+
     nums.sort((a, b) => a - b)
     const results: number[][] = []
     for (let current = 0; current < nums.length; current++) {

@@ -1,7 +1,8 @@
 export function maxArea(height: number[]): number {
-    let max = 0;
+    
 
     // Solucion 1 - Fuerza Bruta - Muere con muchos valores
+    // let max = 0;
     // const finalIndex = height.length - 1;
     // for (let i = 0; i < finalIndex; i++){
     //     for (let j = finalIndex; j > i; j--){
@@ -10,15 +11,26 @@ export function maxArea(height: number[]): number {
     //         max = Math.max(max, quantity);
     //     }
     // }
+    // return max;
+
 
     // Solucion 2 - Optima
+
+    // Inicializamos el contador y los 2 punteros
+    let max = 0;
     let start = 0, end = height.length - 1;
+
+    // vamos a ir recortando de cada lado hasta que se encuentren
     while (start < end) {
+
+        // Encontramos el lateral mas bajo
         const lower = Math.min(height[start], height[end]);
         
+        // guardamos el maximo
         // Formula matemática del calculo
         max = Math.max(max, lower * (end - start));
     
+        // nos quedamos con el mas alto y avanzamos con el otro
         if (height[start] > height[end]) {
             end--;
         } else {

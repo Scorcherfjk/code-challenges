@@ -1,14 +1,22 @@
 export function intersection(nums1: number[], nums2: number[]): number[] {
-  // Solucion 1 - Mia, mas corta
+  // Esta solucion usa los metodos internos de los Set O(n)
   // return [...new Set(nums1).intersection(new Set(nums2))];
 
-  // Solucion 2, fuerza bruta
+  // Solucion 2
+  // Iniciamos un set para busquedas O(1)
   const set1 = new Set(nums1);
   const intersection: number[] = [];
-  new Set(nums2).forEach((value) => {
+
+  // Recorremos todos los elementos
+  for (const value of new Set(nums2)) {
+    
+    // Si encontramos algun repetido
     if (set1.has(value)) {
+    
+      // significa que forma parte de la interseccion y lo anadimos
       intersection.push(value);
     }
-  });
+  }
+
   return intersection;
 }

@@ -20,17 +20,31 @@ export function merge(
   // Usamos 2 punteros para seguir los 2 arrays
   // Hacemos el loop mientras hayan elementos que meter en el array final
 
-  let final = nums1.length - 1;
-  let final1 = m - 1;
-  let final2 = n - 1;
-  while (final2 >= 0) {
-    if (final1 >= 0 && nums1[final1] >= nums2[final2]) {
-      nums1[final] = nums1[final1];
-      final1--;
+  // 3 punteros (una locura)
+  let finalTotal = nums1.length - 1; // Final del array L
+  let finalL = m - 1; // final de los numeros validos en el array L
+  let finalS = n - 1; // final del array S (pendientes de introducir)
+
+
+  // Mientras hayan numeros pendientes por introducir
+  // Porque cuando se hayan acabado, los del array L ya estaran ordenados al inicio
+  while (finalS >= 0) {
+
+    // Aun hay elementos en el array L y este en mayor al mas alto del array S
+    if (finalL >= 0 && nums1[finalL] >= nums2[finalS]) {
+      
+      // Lo reacomodamos al final y retrocedemos el puntero L
+      nums1[finalTotal] = nums1[finalL];
+      finalL--;
     } else {
-      nums1[final] = nums2[final2];
-      final2--;
+
+      // Si el mayor es el ultimo del array S,
+      // lo guaradamos y retrocedemos el puntero S
+      nums1[finalTotal] = nums2[finalS];
+      finalS--;
     }
-    final--;
+
+    // Retrocedemos el puntero total
+    finalTotal--;
   }
 }

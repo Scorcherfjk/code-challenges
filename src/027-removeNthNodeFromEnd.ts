@@ -18,7 +18,7 @@ export function removeNthFromEnd(head: ListNode | null, n: number): ListNode | n
     }
 
     // si el amigo rapido terminó, significa que no hay nadie mas que sacar que el primero
-    if (fast === null) {
+    if (!fast) {
         return head.next;
     }
 

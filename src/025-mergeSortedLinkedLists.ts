@@ -1,8 +1,3 @@
-/*
- * OUTPUT: Combinar dos listas enlazadas ordenadas en una sola lista ordenada
- * ALGORITMO: Fusionar las listas con dos punteros avanzando por cada lista
- * SKILL: Linked List
- */
 import { ListNode } from "./utils/ListNode";
 
 export function mergeTwoLists(
@@ -30,10 +25,10 @@ export function mergeTwoLists(
   }
 
   // si quedo remanente de alguna, entonces la vinculamos
-  if (list1 !== null) {
+  if (list1) {
     current.next = list1;
   }
-  if (list2 !== null) {
+  if (list2) {
     current.next = list2;
   }
 

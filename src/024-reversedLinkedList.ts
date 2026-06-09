@@ -12,7 +12,7 @@ export function reverseList(head: ListNode | null): ListNode | null {
 
     // Mientras el actual no sea null,
     // porque significara que ya no hay nodos pendiente
-    while (currentNode !== null) {
+    while (currentNode) {
         // Guardamos el nodo siguiente para no perderlo
         const nextNode = currentNode.next;
 
